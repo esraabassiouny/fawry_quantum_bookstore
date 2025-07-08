@@ -5,8 +5,14 @@ public class Test
     public void addBooks(List<Book> booksToAdd) {
         System.out.println("Quantum Bookstore: Adding books...");
         for (Book book : booksToAdd) {
-            Inventory.addBook(book);
-            System.out.println("Quantum Bookstore: Book added - " + book.getTitle());
+            try {
+                Inventory.addBook(book);
+                System.out.println("Quantum Bookstore: Book added - " + book.getTitle());
+            }
+            catch(RuntimeException e)
+            {
+                System.out.println("Quantum Bookstore: " + e.getMessage());
+            }
         }
         System.out.println();
     }

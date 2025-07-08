@@ -17,6 +17,8 @@ public class Main {
         // add books
         List<Book> booksToAdd = new ArrayList<>();
         booksToAdd.add(paper);
+        //try to add same book twice
+        booksToAdd.add(paper);
         booksToAdd.add(paper1);
         booksToAdd.add(ebook);
         booksToAdd.add(demo);

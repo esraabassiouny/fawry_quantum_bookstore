@@ -7,6 +7,11 @@ public class Inventory
     private static List<Book> books = new ArrayList<>();
     public static void addBook(Book book)
     {
+        for(Book inventoryBook:books)
+        {
+           if(inventoryBook.getISBN().equals(book.getISBN()))
+               throw new RuntimeException("This book already added before\n");
+        }
         books.add(book);
     }
 
