@@ -4,10 +4,11 @@ public class EBook extends Book
 
     private boolean isViaEmail;
 
-    public EBook(String ISBN,String title,int yearPublished,double price,String fileType)
+    public EBook(String ISBN,String title,int yearPublished,double price,String fileType,boolean isViaEmail)
     {
         super(ISBN,title,yearPublished,price);
         this.fileType = fileType;
+        this.isViaEmail = isViaEmail;
     }
     public String getFileType() {
         return fileType;

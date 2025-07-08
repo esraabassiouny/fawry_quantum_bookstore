@@ -11,7 +11,7 @@ public class Main {
         // define books
         PaperBook paper = new PaperBook("ISBN001", "Java Basics", 2010, 120.0, 10, true);
         PaperBook paper1 = new PaperBook("ISBN005", "Thinking in Java", 1998, 100, 8, false);
-        EBook ebook = new EBook("ISBN002", "Learn Python", 2021, 70.0, "pdf");
+        EBook ebook = new EBook("ISBN002", "Learn Python", 2021, 70.0, "pdf",true);
         DemoBook demo = new DemoBook("ISBN003", "A Tour of C++", 2013, 0.0);
 
         // add books
